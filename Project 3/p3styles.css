@@ -1,0 +1,330 @@
+/******f************
+    
+    Project 3 Stylesheet
+    Name: Sergio Scaramuzzi
+    Date: 2021-12-03
+    Description: Styles for eportfolio.
+
+*******************/
+
+body{
+    display: flex;
+    justify-content:center;
+    background-color: #f2f7fb;
+    flex-direction: column;
+    align-items: center;
+}
+
+main{
+    width: 1430px;
+    box-shadow: 0px -3px 11px 5px lightgrey;
+    background-color: white;
+    border-radius: 25px;
+    font-family: Garamond, serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgrey;
+}
+
+footer{
+    display:flex;
+    justify-content: center;
+    height: 50px;
+}
+
+#Icon{
+    max-width: 12%;
+    height: auto;
+    border-radius: 25px;
+    margin-left: 5%;
+}
+
+#me{
+    border-radius: 50%;
+    width: 50%;
+}
+
+#salesquote{
+    margin-bottom: 5%;
+    width: 75%;
+    align-self: center;
+    border: 1px solid;
+}
+
+#weather{
+    margin-bottom: 5%;
+    width: 75%;
+    align-self: center;
+}
+
+#content{
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    min-height: 100vh;
+}
+
+#project_content, #about_content{
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#contact_content{
+    display: block;
+    justify-content: center;
+    min-height: 100vh;
+    margin-top: 100px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+#contact_section, .myinfo{
+    min-width: 80%;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+#Li-in{
+    width: 32px;
+    height: 32px;
+    margin-left: 25px;
+}
+
+#index_section{
+    padding-left: 20%;
+}
+
+aside{
+    float: right;
+    display: flex;
+    justify-content: center;
+}
+
+header nav{
+    display: flex;
+    justify-content: flex-end;
+    width: 35%;
+    margin-right: 5%;
+}
+
+footer nav{
+    width: 75%;
+    text-align: center;
+    align-self: center;
+}
+
+header nav a, footer nav a{
+    text-decoration: none;
+    margin-right: 6%;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+h1{
+    font-size: 300%;
+    width: 70%;
+}
+
+h4{
+    width: 130%;
+}
+
+#name, #number, #email{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+#subject{
+    width: 100%;
+    height: 2in;
+    padding: 12px;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+button[type=submit], button[type=reset]{
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 4%;
+}
+
+.error{
+    color: red;
+    margin: 0px;
+}
+
+input:focus, textarea:focus{
+    background-color: #ff67a7;
+    color: #154c79;
+}
+
+a:visited
+{
+    color: black;
+}
+
+a:hover, a:focus
+{
+    text-shadow: -1px 1px 0 blue, 1px -1px 0 red;
+}
+
+.contactlinks{
+    text-decoration: none;
+    font-size: 130%;
+    margin-right: 5%;
+}
+
+.contactlinks:visited{
+    color: #ff67a7;
+}
+
+.contactlinks:hover, .contactlinks:focus
+{
+    text-shadow: -1px 1px 0 blue;
+}
+
+.info, #skills{
+    align-self: center;
+    width: 60%;
+    font-size: 150%;
+}
+
+.heading{
+    align-self: center;
+    margin: 3%;
+}
+
+#skills li{
+    margin-bottom: 3%;
+}
+
+
+/*Tablets*/
+@media only screen and (max-width: 12in){
+
+    main{
+        max-width: 100%;
+    }
+
+    header{
+        height: 10%;
+    }
+
+    #content{
+        margin-top: 20%;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    #project_content{
+        padding: 15px;
+    }
+}
+
+/*Phones*/
+@media only screen and (max-width: 6in){
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header{
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    header nav{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        width: 100%;
+        margin-right: 0%;
+    }
+
+    #Icon{
+        margin: auto;
+    }
+    
+    #me{
+        width: 60%;
+    }
+
+    #logos{
+        align-self: flex-end;
+    }
+
+    header nav a{
+        width: 100%;
+        text-align: center;
+        border: 1px solid lightgray;
+        background-image: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        box-sizing: border-box;
+        padding: 5%;
+    }
+
+    #content{
+        display: flex;
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    #index_section{
+        padding: 10px;
+    }
+
+    h1{
+        text-align: center;
+        width: 100%;
+        font-size: 150%;
+    }
+
+    h4{
+        width: 100%;
+        text-align: center;
+    }
+
+    footer{
+        margin-top: 13%;
+        position: static;
+        width: auto;
+    }
+
+    aside{
+        display: flex;
+        justify-content: center;
+    }
+
+    footer nav{
+        display: none;
+    }
+
+    p, #skills{
+        width: 90%;
+    }
+}
+    
