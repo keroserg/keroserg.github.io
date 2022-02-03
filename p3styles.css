@@ -6,6 +6,9 @@
     Description: Styles for eportfolio.
 
 *******************/
+:root{
+    font-size: 16px;
+}
 
 body{
     display: flex;
@@ -37,7 +40,7 @@ footer{
 }
 
 #Icon{
-    max-width: 12%;
+    max-width: 20%;
     height: auto;
     border-radius: 25px;
     margin-left: 5%;
@@ -88,6 +91,10 @@ section{
     flex-direction: column;
 }
 
+.bulletlist{
+    align-self: center;
+}
+
 #contact_section, .myinfo{
     min-width: 80%;
     max-width: 80%;
@@ -130,6 +137,8 @@ header nav a, footer nav a{
     margin-right: 6%;
     font-weight: bold;
     white-space: nowrap;
+    font-size: 1.5rem;
+    transition: all 0.1s ease-in-out;
 }
 
 h1{
@@ -194,13 +203,13 @@ a:hover, a:focus
     margin-right: 5%;
 }
 
-.contactlinks:visited{
+a:visited{
     color: #ff67a7;
 }
 
-.contactlinks:hover, .contactlinks:focus
+a:hover
 {
-    text-shadow: -1px 1px 0 blue;
+    text-shadow: -1px 1px 0 black;
 }
 
 .info, #skills{
@@ -268,6 +277,7 @@ a:hover, a:focus
 
     #Icon{
         margin: auto;
+        display: flex;
     }
     
     #me{
